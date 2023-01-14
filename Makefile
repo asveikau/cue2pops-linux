@@ -1,7 +1,6 @@
 
 SRC = cue2pops.c
 
-CC = gcc
 CFLAGS = -Wall -Wextra
 
 CFLAGS_DEBUG = $(CFLAGS) -O0 -g -DDEBUG
@@ -27,5 +26,5 @@ install: cue2pops
 	$(CP) $(TARGET) $(INSTALL_DIR)
 
 clean:
-	$(RM) $(TARGET)
+	$(RM) -f $(TARGET)
 
